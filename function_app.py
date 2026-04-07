@@ -2,7 +2,6 @@ import os
 import traceback
 import logging
 import requests
-import pandas as pd
 from bs4 import BeautifulSoup
 import azure.functions as func
 from helpers import extract_offer_info, format_offer_for_telegram, send_telegram_msg
