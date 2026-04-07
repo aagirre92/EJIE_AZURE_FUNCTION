@@ -9,7 +9,7 @@ from helpers import extract_offer_info, format_offer_for_telegram, send_telegram
 app = func.FunctionApp()
 
 # Run on startup true para testear...
-@app.timer_trigger(schedule="%TIMER_SCHEDULE%", arg_name="myTimer", run_on_startup=True,
+@app.timer_trigger(schedule="%TIMER_SCHEDULE%", arg_name="myTimer", run_on_startup=False,
               use_monitor=False) 
 def timer_trigger(myTimer: func.TimerRequest) -> None:
     
